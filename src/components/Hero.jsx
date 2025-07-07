@@ -16,7 +16,6 @@ const Hero = () => {
     link.click();
     document.body.removeChild(link);
   };
-  
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden">
