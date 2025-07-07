@@ -1,20 +1,16 @@
-// 🚀 EASY PROJECT MANAGEMENT
-// Simply add new projects to this array - no need to touch any other files!
-
 export const projectsData = [
   {
-    title: "Neuro-Navigator",
-    type: "Flutter Mobile App",
-    description: "A comprehensive mobile companion for individuals with ADHD designed to improve executive functions through task management, gamification, and AI-powered support.",
+    title: "Advanced_e_commerce",
+    type: "React web application",
+    description: "A modern e-commerce platform built with React, offering a seamless shopping experience for users with a useful features to have the best possible ux",
     features: [
-      "Multi-faceted task and schedule management system with local notifications",
-      "Integrated Firebase for user authentication and cloud data storage",
-      "Built a gamification and progress tracking system for tasks, motion (steps), and IQ quizzes",
-      "Implemented an AI chat feature using the DeepSeek API for user support and guidance"
+      "User-friendly interface for easy navigation and product selection",
+      "Advanced search and filtering functionality to help users find what they're looking for",
+      "seemless user experience",
     ],
-    technologies: ["Dart", "Flutter", "Firebase", "DeepSeek API", "Local Notifications", "Hive (Local DB)","Health package"],
-    githubUrl: "https://github.com/KerelosNasser/neuro_navigator", // Replace with your actual repo
-    liveUrl: "", // Add if you have a live demo
+    technologies: ["Typescript", "react", "TailwindCSS", "Shadcn UI", "Vite", "Lucide react", "framer-motion", "responsive design", "ui/ux design"],
+    githubUrl: "https://github.com/KerelosNasser/advanced_e_commerce?tab=readme-ov-file", // Replace with your actual repo
+    liveUrl: "https://advanced-e-commerce.vercel.app/", // Add if you have a live demo
     status: "Completed",
     featured: true
   },

@@ -8,6 +8,15 @@ const Hero = () => {
       aboutSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/files/cv.pdf';
+    link.download = 'Kerolos_Nasser_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden">
@@ -39,7 +48,7 @@ const Hero = () => {
           {/* Subtitle with Animation */}
           <div className="mb-8 animate-fade-in-delay-2">
             <p className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 mb-4">
-              Flutter & Front-End Developer
+              Front-End Developer
             </p>
             <div className="flex items-center justify-center gap-2 text-lg text-gray-600 dark:text-gray-400">
               <Code size={20} className="text-blue-500" />
@@ -49,7 +58,7 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto mb-12 leading-relaxed animate-fade-in-delay-3">
-            Passionate about creating robust, user-centric applications with expertise in Flutter, React, and modern web technologies. 
+            Passionate about creating robust, user-centric applications with expertise in React, and modern web technologies. 
             I transform ideas into beautiful, functional digital solutions that make a difference.
           </p>
 
@@ -89,6 +98,12 @@ const Hero = () => {
               <Phone size={18} />
               <span>+201211730727</span>
             </a>
+            <button 
+             onClick={handleDownloadCV}
+             className="flex items-center gap-2 px-4 py-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-lg transform hover:-translate-y-1"
+             >
+              <span>Download my CV</span>
+            </button>
           </div>
 
           {/* CTA Buttons */}
